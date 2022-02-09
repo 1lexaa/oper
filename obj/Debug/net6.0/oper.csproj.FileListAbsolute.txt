@@ -1,0 +1,15 @@
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/oper.csproj.AssemblyReference.cache
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/oper.GeneratedMSBuildEditorConfig.editorconfig
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/oper.AssemblyInfoInputs.cache
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/oper.AssemblyInfo.cs
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/oper.csproj.CoreCompileInputs.cache
+/Users/1lexaa/Documents/учеба/oper/bin/Debug/net6.0/oper
+/Users/1lexaa/Documents/учеба/oper/bin/Debug/net6.0/oper.deps.json
+/Users/1lexaa/Documents/учеба/oper/bin/Debug/net6.0/oper.runtimeconfig.json
+/Users/1lexaa/Documents/учеба/oper/bin/Debug/net6.0/oper.dll
+/Users/1lexaa/Documents/учеба/oper/bin/Debug/net6.0/ref/oper.dll
+/Users/1lexaa/Documents/учеба/oper/bin/Debug/net6.0/oper.pdb
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/oper.dll
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/ref/oper.dll
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/oper.pdb
+/Users/1lexaa/Documents/учеба/oper/obj/Debug/net6.0/oper.genruntimeconfig.cache
