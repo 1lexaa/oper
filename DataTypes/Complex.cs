@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oper.DataTypes
 {
-    internal class Complex
+    public class Complex : ICloneable
     {
         public double Re { get; set; }  // Действительная час
         public double Im { get; set; }  // Мнимая часть
@@ -19,6 +19,12 @@ namespace Oper.DataTypes
         {
             return $"({this.Re}" + (this.Im > 0 ? " + " : " - ") + $"{Math.Abs(this.Im)}i)";
         }
+
+        public object Clone()
+        {
+            return new Complex { Re = this.Re, Im = this.Im };
+        }
+
         public static Complex operator + (Complex c1, Complex c2)
         {
             return new Complex
@@ -56,23 +62,13 @@ namespace Oper.DataTypes
             };
         }
 
-        public static Complex operator + (Complex c1, double r)
+        public static Complex operator + (Complex c1, double r) {return new Complex { Re = c1.Re + r, Im = c1.Im }; }
+        public static Complex operator * (Complex c1, double r) { return new Complex { Re = c1.Re * r, Im = c1.Im * r };}
+        public static Complex operator - (Complex c1, double r) { return new Complex { Re = c1.Re - r, Im = c1.Im }; }
+        public static Complex operator / (Complex c1, double r)
         {
-            return new Complex { Re = c1.Re + r, Im = c1.Im };
-        }
-
-        public static Complex operator -(Complex c1, double r)
-        {
-            return new Complex { Re = c1.Re - r , Im = c1.Im};
-        }
-        public static Complex operator *(Complex c1, double r)
-        {
-            return new Complex { Re = c1.Re * r, Im = c1.Im * r };
-        }
-            public static Complex operator /(Complex c1, double r)
-            {
-    if(r == 0) throw new Exceptions.ComplexException("Complex divided by real 0");
-    return new Complex { Re = c1.Re / r , Im = c1.Im / r};
+            if (r == 0) throw new Exceptions.ComplexException("Complex divided by real 0");
+            return new Complex { Re = c1.Re / r, Im = c1.Im / r };
         }
     }
 }
